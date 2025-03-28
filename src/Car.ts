@@ -165,7 +165,7 @@ export class Car {
     const loader = new GLTFLoader();
 
     loader.load(
-      "src/models/trackmania2020_revisited.glb",
+      "/models/trackmania2020_revisited.glb",
       (gltf) => {
         // Extraction du modèle
         this.model = gltf.scene;

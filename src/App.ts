@@ -348,9 +348,9 @@ export class App {
     }, 100);
   }
 
-  private loadHDRBackground(filename: string): void {
+  private loadHDRBackground(hdrPath: string): void {
     const rgbeLoader = new RGBELoader();
-    rgbeLoader.load(`src/textures/studio.hdr`, (texture) => {
+    rgbeLoader.load(`/textures/${hdrPath}`, (texture) => {
       texture.mapping = THREE.EquirectangularReflectionMapping;
       this.scene.background = texture;
       this.scene.environment = texture;
